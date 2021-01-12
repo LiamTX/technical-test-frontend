@@ -5,23 +5,23 @@ export default {
     namespaced: true,
 
     state: {
-        userApiLoading: false
+        carApiLoading: false
     },
 
     getters: {
-        userApiLoading: state => state.userApiLoading
+        carApiLoading: state => state.carApiLoading
     },
 
     mutations: {
-        setUserApiLoading(state, newState) {
-            state.userApiLoading = newState
+        setCarApiLoading(state, newState) {
+            state.carApiLoading = newState
         }
     },
 
     actions: {
 
-        async auth(context, data) {
-            const response = await axios.get(process.env.VUE_APP_BASE_URL + '/users/create', data);
+        async register(context, data) {
+            const response = await axios.post(process.env.VUE_APP_BASE_URL + '/cars/create', data);
 
             return response;
         }
