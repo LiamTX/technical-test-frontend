@@ -16,9 +16,9 @@ $ npm install
 ```
 
 ### Iniciando o projeto
-Com todas as dependências e as configurações feitas, agora você pode executar a api:
+Com todas as dependências e as configurações feitas, agora você pode executar o projeto:
 ```
-npm run dev
+npm run serve
 ```
 
 ### Customize configuration
