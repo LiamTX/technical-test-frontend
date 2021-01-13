@@ -9,19 +9,25 @@ const routes = [
     path: '/',
     component: () => import('../views/Views.vue'),
     children: [
-     {
-      path: '/Feed',
-      name: 'Feed',
-      component: () => import('../views/pages/Feed.vue')
-     },
-     {
-      path: '/Create',
-      name: 'Create',
-      component: () => import('../views/pages/Create.vue')
-     }
+      {
+        beforeEnter(to, from, next) {
+          next('/Feed')
+        },
+        path: '//'
+      },
+      {
+        path: '/Feed',
+        name: 'Feed',
+        component: () => import('../views/pages/Feed.vue')
+      },
+      {
+        path: '/Create',
+        name: 'Create',
+        component: () => import('../views/pages/Create.vue')
+      }
     ]
   },
-  
+
 ]
 
 const router = new VueRouter({

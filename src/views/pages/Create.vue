@@ -65,8 +65,8 @@
           </v-menu>
 
           <v-text-field
-            value="10.00"
             prefix="$"
+            v-money="money"
             aria-autocomplete="false"
             class="mx-5"
             label="Preço do carro"
@@ -103,14 +103,22 @@
 import CpmToolbar from "../../components/cpmToolbar.vue";
 
 import { mapMutations, mapGetters, mapActions } from "vuex";
+import { VMoney } from "v-money";
 
 export default {
   components: { CpmToolbar },
+  directives: { money: VMoney },
   data() {
     return {
       date: new Date().toISOString().substr(0, 7),
       menu: false,
       modal: false,
+
+      money: {
+        decimal: ",",
+        thousands: ".",
+        precision: 2
+      },
 
       car: {
         brand: "",
