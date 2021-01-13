@@ -1,3 +1,5 @@
+<!-- Tela principal -->
+
 <template>
   <div class="d-flex flex-column">
     <CpmToolbar />

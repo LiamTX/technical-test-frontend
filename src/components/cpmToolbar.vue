@@ -1,3 +1,5 @@
+<!-- Componente para navegação entre as views -->
+
 <template>
   <div class="toolBardiv">
     <v-app-bar color="deep-purple" dark max-width="800" class="ac">
