@@ -1,18 +1,24 @@
-# frontend
+# technical-test-frontend
 
-## Project setup
+## Getting Started
+### Pré-requisitos
+Para executar este projeto no modo de desenvolvimento, você precisará ter um ambiente básico com NodeJS 8+ instalado.
+
+#### Instalando dependências
 ```
-npm install
+$ yarn
 ```
 
-### Compiles and hot-reloads for development
+ou
+
 ```
-npm run serve
+$ npm install
 ```
 
-### Compiles and minifies for production
+### Iniciando o projeto
+Com todas as dependências e as configurações feitas, agora você pode executar a api:
 ```
-npm run build
+npm run dev
 ```
 
 ### Customize configuration
